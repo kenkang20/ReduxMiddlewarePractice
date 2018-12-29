@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchWeather } from '../actions/index';
 
-export default class SearchBar extends Component {
+class SearchBar extends Component {
     constructor(props) {
         super(props);
 
@@ -26,7 +26,7 @@ export default class SearchBar extends Component {
 
     render() {
         return (
-            <form onSumit={ this.onFormSumit } className="input-group">
+            <form onSubmit={ this.onFormSumit } className="input-group">
                 <input 
                     placeholder="Get a five-day forecast in your favorite cities"
                     className="form-control"
